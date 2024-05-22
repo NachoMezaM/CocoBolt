@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="411dp"
+            android:layout_height="129dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-1dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/banner_menu"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="168dp"
+                android:layout_height="107dp"
+                android:fontFamily="@font/bungee"
+                android:text="menu"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.102"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/BTcarrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="Ver Carrito"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tittle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.493" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="415dp"
+            android:layout_height="599dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            tools:layout_editor_absoluteX="-3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="-3dp"
+                tools:layout_editor_absoluteY="130dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="411dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="78dp"
+                        android:layout_height="32dp"
+                        android:fontFamily="@font/bungee"
+                        android:text="Bowls"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.064"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.529" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="70dp"
+                        android:layout_height="33dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.941"
+                        app:srcCompat="@drawable/bowl" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/producto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="NachiBowl"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pollo Teriyaki, Choclo, Lechuga, Zanahoria rallada, Arroz" />
+
+                    <Button
+                        android:id="@+id/agregarcarro1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$4.500" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/producto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="CocoBowl"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pollo Teriyaki, Lechuga, Palta, Tomate, Arroz" />
+
+                    <Button
+                        android:id="@+id/agregarcarro2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$5.500" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/producto3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="PanchoBowl"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pollo Teriyaki, Pepino, Lechuga, Zanahoria, Betarraga, Arroz" />
+
+                    <Button
+                        android:id="@+id/agregarcarro3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$4.000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/producto4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="FabiBowl"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pollo Teriyaki, Zanahoria rallada, Lechuga, Pepino, Aceitunas, Arroz" />
+
+                    <Button
+                        android:id="@+id/agregarcarro4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$3.500" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/producto5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="Vegan"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lechuga, Zanahoria rallada, Choclo, Pepino, Arroz" />
+
+                    <Button
+                        android:id="@+id/agregarcarro5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$2.500" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="78dp"
+                        android:layout_height="32dp"
+                        android:fontFamily="@font/bungee"
+                        android:text="Fajitas"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.064"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.529" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="70dp"
+                        android:layout_height="33dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.941"
+                        app:srcCompat="@drawable/fajita" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/producto6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="Fajita Vegan"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soya, Lechuga, Morron, Choclo" />
+
+                    <Button
+                        android:id="@+id/agregarcarro6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$3.500" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/producto7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="Fajita Special"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pollo Nugget, Lechuga, Morron, Choclo" />
+
+                    <Button
+                        android:id="@+id/agregarcarro7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$2.500" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/producto8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="Fajita Normal"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pollo a la plancha, Lechuga, Choclo, Morron" />
+
+                    <Button
+                        android:id="@+id/agregarcarro8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$2.500" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
