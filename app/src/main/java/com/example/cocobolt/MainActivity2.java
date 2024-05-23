@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class MainActivity2 extends AppCompatActivity {
+    //VARIABLES
     private Button volver;
 
     private static final int REQUEST_LOCATION_PERMISSION = 1000;
@@ -41,7 +42,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2); // Asegúrate de que este es el layout correcto
+        setContentView(R.layout.activity_main2);
 
         tvLatitud = findViewById(R.id.tvlatitud);
         tvLongitud = findViewById(R.id.tvlongitud);
@@ -50,7 +51,7 @@ public class MainActivity2 extends AppCompatActivity {
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         locationListener = new Localizacion();
         locationListener.setMainActivity(this);
-
+        //CHECKOUT
         checkLocationPermissionAndStart();
         TextView boleta = findViewById(R.id.boleta1);
         TextView neto = findViewById(R.id.neto);
@@ -75,7 +76,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
-
+//GPS
     private void checkLocationPermissionAndStart() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
                 && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
